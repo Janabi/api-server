@@ -1,0 +1,32 @@
+{
+  "categories": [
+    {
+      "name": "Sony",
+      "display_name": "AC",
+      "desription": "Nup",
+      "id": 1
+    },
+    {
+      "name": "Apple",
+      "display_name": "iPhone",
+      "desription": "ok!",
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "category": "electronic",
+      "name": "Sonic",
+      "display_name": "Hover",
+      "desription": "hi",
+      "id": 1
+    },
+    {
+      "category": "electronic",
+      "name": "Sonic",
+      "display_name": "Hover",
+      "desription": "hello",
+      "id": 2
+    }
+  ]
+}
