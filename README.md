@@ -119,10 +119,10 @@ MONGODB_URI='mongodb://localhost:27017/api-server-app'
 ## Lab 09
 
 ### Desription of today Lab
-**Today we create a mongo database and applying the CRUD methods on this database (get, post, delete, put) and testing them using the supergoose module.**
+**Today we create a mongo database and applying the CRUD methods on this database (get, post, delete, put) and testing them using the supergoose module. Also, we used a router.param to use it in the all CRUD methods.**
 
 ### Pull Request
-- [PR2](https://github.com/Janabi/api-server/pull/4)
+- [PR4](https://github.com/Janabi/api-server/pull/4)
 
 ### Dependencies
 - json-server
@@ -131,6 +131,7 @@ MONGODB_URI='mongodb://localhost:27017/api-server-app'
 - jest
 - jest-cli
 - @code-fellows/supergoose
+- supertest
 - nodemon
 - cors
 - mongoose
