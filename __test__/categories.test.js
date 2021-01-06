@@ -5,6 +5,15 @@ require('@code-fellows/supergoose');
 const categories = require('../lib/models/categories/categories.collection');
 
 describe('Category Model', ()=> {
+    let consoleSpy;
+     beforeEach(()=> {
+         consoleSpy = jest.spyOn(console, 'log').mockImplementation();
+     });
+
+     afterEach(()=> {
+         consoleSpy.mockRestore();
+     });
+     
     it('it can create()', async()=> {
         const categoryObj = {
             name: 'apple',
