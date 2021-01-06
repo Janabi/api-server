@@ -1,18 +1,18 @@
 'use strict';
 
  const {server} = require('../lib/server');
- const mongoose = require('mongoose');
+//  const mongoose = require('mongoose');
  
- const MONGODB_URI = process.env.MONGODB_URI;
+//  const MONGODB_URI = process.env.MONGODB_URI;
  
- mongoose.connect(MONGODB_URI, {
-     useNewUrlParser: true,
-     useCreateIndex: true,
-     useFindAndModify: false,
-     useUnifiedTopology: true
- });
+//  mongoose.connect(MONGODB_URI, {
+//      useNewUrlParser: true,
+//      useCreateIndex: true,
+//      useFindAndModify: false,
+//      useUnifiedTopology: true
+//  });
 
- const supertest = require('supertest');
+ const supertest = require('@code-fellows/supergoose');
 
  const mockRequest = supertest(server);
 

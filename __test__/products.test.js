@@ -5,6 +5,15 @@ require('@code-fellows/supergoose');
 const products = require('../lib/models/products/products.collection');
 
 describe('Product Model', ()=> {
+    let consoleSpy;
+     beforeEach(()=> {
+         consoleSpy = jest.spyOn(console, 'log').mockImplementation();
+     });
+
+     afterEach(()=> {
+         consoleSpy.mockRestore();
+     });
+     
     it('it can create()', async()=> {
         const productObj = {
             category: "electronics",

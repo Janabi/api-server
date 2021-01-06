@@ -7,14 +7,14 @@ const supergoose = require('@code-fellows/supergoose');
 const mockRequest = supergoose(server);
 
 describe('Checking API Routes for both Products and Categories', ()=>{
-    // let consoleSpy;
-    // beforeEach(()=> {
-    //     consoleSpy = jest.spyOn(console, 'log').mockImplementation();
-    // });
+    let consoleSpy;
+    beforeEach(()=> {
+        consoleSpy = jest.spyOn(console, 'log').mockImplementation();
+    });
 
-    // afterEach(()=> {
-    //     consoleSpy.mockRestore();
-    // });
+    afterEach(()=> {
+        consoleSpy.mockRestore();
+    });
 
     // Categories api server
     it('can post a category item', async()=> {
