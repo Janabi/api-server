@@ -123,7 +123,6 @@ MONGODB_URI='mongodb://localhost:27017/api-server-app'
 
 ### Pull Request
 - [PR4](https://github.com/Janabi/api-server/pull/4)
-- [PR4](https://github.com/Janabi/api-server/pull/5)
 
 ### Dependencies
 - json-server

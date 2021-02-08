@@ -3,6 +3,7 @@
 const express = require('express');
 const products = require('../lib/models/products/products.collection')
 const categories = require('../lib/models/categories/categories.collection')
+const todo = require('../lib/models/todo/todo.collection')
 
 const router = express.Router();
 
@@ -59,6 +60,10 @@ function getModel (req, res, next) {
             break;
         case "categories":
             req.model = categories;
+            next()
+            break;
+        case "todo":
+            req.model = todo;
             next()
             break;
         default:
