@@ -4,7 +4,7 @@ const express = require('express');
 const products = require('../lib/models/products/products.collection')
 const categories = require('../lib/models/categories/categories.collection')
 const todo = require('../lib/models/todo/todo.collection')
-
+// MONGODB_URI='mongodb://localhost:27017/api-server-app'
 const router = express.Router();
 
 router.post('/api/v1/:model', postHandler);
